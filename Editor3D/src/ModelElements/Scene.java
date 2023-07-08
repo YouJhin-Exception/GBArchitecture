@@ -20,10 +20,22 @@ public class Scene {
         Id = id;
     }
 
-    public Type method1(Type type){
-        return type; // or new Type() - ???   .. может тут вообще нужна Camera...
+    public <T> T method1(T flash) {
+        return flash;
     }
-    public Type method2(Type type, Type type1){
-        return new Type();  // same here
+
+    public <T, E> T method2(T model, E flash) {
+        return model;
     }
+
+    //заглушки
+
+//    public Type method1(Type type){
+//        return type; // or new Type() - ???   .. может тут вообще нужна Camera...
+//    }
+//    public Type method2(Type type1, Type2 type2){
+//        return new Type();  // same here
+//    }
+
+
 }
