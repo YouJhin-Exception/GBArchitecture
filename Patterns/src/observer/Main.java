@@ -13,6 +13,8 @@ public class Main {
         RegularUser user = new RegularUser(page);
         page.addNewPost("Have a n1s day");
 
+        System.out.println();
+
         RecruiterUser recruiterUser = new RecruiterUser(page);
         OfficialUser officialUser = new OfficialUser(page);
 
