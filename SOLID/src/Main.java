@@ -6,7 +6,6 @@ import someCars.TeslaCar;
 
 public class Main {
     public static void main(String[] args) {
-
         // реализация через тип и свичи
         TeslaCar teslaA1 = new TeslaCar("Tesla", "A1", "Red", "cope", 4, FuelType.DIESEL, "auto", 2.5);
         System.out.println(teslaA1.toString());
@@ -25,13 +24,5 @@ public class Main {
         teslaFb1.setFillStationFactory(new ElectricFillStationFactory()); // меняем на зарядку
         teslaFb1.fill();
         System.out.println();
-
-
-
-
-
-
-
-
     }
 }

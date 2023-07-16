@@ -17,7 +17,7 @@ public class TeslaCar extends aCar implements iFillStation {
     /**
      * конструктор реализации через свичи и тип (типо стратегия :-) )
      *
-     * @param fuelType - задаем тип топлива из enum FuelType
+     * @param fuelType - задаем тип топлива из num FuelType
      */
     public TeslaCar(String brand, String model, String color, String bodyType, int numberOfWheels, FuelType fuelType, String transmissionType, double engineVolume) {
         super(brand, model, color, bodyType, numberOfWheels, fuelType, transmissionType, engineVolume);
@@ -113,3 +113,4 @@ public class TeslaCar extends aCar implements iFillStation {
     }
 
 }
+

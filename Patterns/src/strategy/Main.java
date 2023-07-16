@@ -1,4 +1,4 @@
-package strategy;
+package src.strategy;
 
 import strategy.abstracts.Boat;
 import strategy.classes.Boats.FishBoat;
