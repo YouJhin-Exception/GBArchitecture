@@ -34,7 +34,7 @@ public abstract class aSellingApplications {
      * метод выводящий товары в консоль
      *
      * @param logic объект уровня логики
-     * @return count количество товаров   чего ? позиций или чего  !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+     * @return count количество товаров
      */
     protected int printAllProducts(iLogic logic) {
         System.out.println("+-----------+-------------------------------+-------+-----------+---------------------------" +
