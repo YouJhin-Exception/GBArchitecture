@@ -43,7 +43,7 @@ public class BaseAppClientRealization extends aSellingApplications {
     }
 
     /**
-     * Меню выпора пользователя
+     * Меню выбора пользователя
      *
      * @param choice выбор
      * @return продолжение работы
