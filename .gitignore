@@ -25,3 +25,6 @@ hs_err_pid*
 replay_pid*
 
 /.idea/
+!/HEXArch/out/production/HEXArch/
+!/HEXArch/.idea/
+!/HEXArch/HEXArch.iml
