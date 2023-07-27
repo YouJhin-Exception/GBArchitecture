@@ -12,14 +12,15 @@ import src.Domain.MovieSearchRequest;
 public class MainMove {
     public static void main(String[] args) {
 
-        IFetchMovieReviews fetchMovieReviews = new MovieReviewsRepo();
-        IPrintMovieReviews printMovieReviews = new ConsolePrinter();
-        IUserInput userCommand = new UserCommand(fetchMovieReviews, printMovieReviews);
+        IFetchMovieReviews fetchMovieReviews = new MovieReviewsRepo(); // создаем репу ревьюх
+        IPrintMovieReviews printMovieReviews = new ConsolePrinter(); // создаем консольный вывод
+        IUserInput userCommand = new UserCommand(fetchMovieReviews, printMovieReviews); // реализация команды на поиск
 
-        MovieUser movieUser = new MovieUser(userCommand);
-        MovieSearchRequest starWarsRequest = new MovieSearchRequest("StarWars");
-        MovieSearchRequest starTrekRequest = new MovieSearchRequest("StarTreck");
+        MovieUser movieUser = new MovieUser(userCommand); // реализация обработки команды на поиск
+        MovieSearchRequest starWarsRequest = new MovieSearchRequest("StarWars"); //сам поиск по фильму - StarWars
+        MovieSearchRequest starTrekRequest = new MovieSearchRequest("StarTrek"); // ~~~~~~~~~~~~~~~~~~ - StarTrek
 
+        // вывод результатов поиска в консоль
         System.out.println("Displaying reviews for movie " + starTrekRequest.getMovieName());
         movieUser.processInput(starTrekRequest);
         System.out.println("Displaying reviews for movie " + starWarsRequest.getMovieName());
