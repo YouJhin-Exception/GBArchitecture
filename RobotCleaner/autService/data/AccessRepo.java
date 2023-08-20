@@ -18,4 +18,9 @@ public class AccessRepo implements IAccessRepo {
     public Token getToken(String tokenId) {
         return tokenStorage.get(tokenId);
     }
+
+    @Override
+    public void removeToken(String token1) {
+        tokenStorage.remove(token1);
+    }
 }
